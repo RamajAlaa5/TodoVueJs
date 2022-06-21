@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/todos',[TodoController::class,'index']);
+Route::prefix('todo')->group(function(){
+    Route::post('storeTodo',[TodoController::class,'store']);
+    Route::get('{id}/getTodo',[TodoController::class,'show']);
+    Route::put('{id}/updateTodo',[TodoController::class,'update']);
+    Route::delete('{id}/deleteTodo',[TodoController::class,'destroy']);
+});
