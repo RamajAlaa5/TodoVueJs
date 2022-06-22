@@ -1,20 +1,25 @@
 <template>
-
-<div>
-<HomeApp/>
-<router-view></router-view>
-</div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <router-link to="/" class="nav-item nav-link">Todo List</router-link>
+                    <router-link to="/create" class="nav-item nav-link">Create Todo</router-link>
+                </div>
+            </div>
+        </nav>
+        <router-view> </router-view>
+    </div>
 </template>
 
 <script>
-import HomeApp from"./home.vue"
+
+
     export default {
         mounted() {
             console.log('Component mounted.')
         },
-        components:{
-            HomeApp
-        }
+
     }
 </script>
 <style scoped>

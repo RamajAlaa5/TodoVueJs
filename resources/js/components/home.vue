@@ -9,7 +9,6 @@
       <li class="nav-item active">
         <a class="nav-link" href="#" style="color:black">Home</a>
         <a class="nav-link" href="#" style="color:black">TodoList</a>
-
       </li>
       </ul>
       </div>
