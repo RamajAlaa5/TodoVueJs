@@ -32,6 +32,7 @@
 
 <script>
     export default {
+                name:"AllTodo",
         data() {
             return {
                 todos: []
