@@ -1,7 +1,7 @@
 ## Run Project
-####npm run watch
+##npm run watch
 
-#####php artisan serve
+##php artisan serve
 
 
 
